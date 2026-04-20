@@ -293,6 +293,84 @@ body::after {
   font-style: italic;
 }
 
+.input-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.file-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--accent-color);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.file-btn:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: var(--accent-color);
+}
+
+.file-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.file-badge-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 320px;
+}
+
+.file-badge-clear {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.file-badge-clear:hover {
+  color: var(--error-color);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.hint-text {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.output-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 /* Animations for mode switch */
 .fade-enter {
   opacity: 0;
